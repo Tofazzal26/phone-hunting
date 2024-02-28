@@ -1,91 +1,153 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>phone-hunting</title>
     <!-- google font cdn here -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
     <style>
-        .poppins {
-            font-family: "Poppins", sans-serif;
-        }
+      .poppins {
+        font-family: "Poppins", sans-serif;
+      }
     </style>
-</head>
-<body class="poppins container mx-auto">
-
+  </head>
+  <body class="poppins container mx-auto">
     <header>
-        <div class="mt-4">
-            <div class="navbar bg-base-100">
-                <div class="navbar-start">
-                  <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                    </div>
-                  </div>
-                  <a class="text-2xl font-bold text-[#403f3f] border-2 border-gray-400 border-dotted">Hot Gadgets</a>
-                </div>
-                <div class="navbar-center hidden lg:flex">
-                </div>
-                <div class="navbar-end">
-                  <a class="px-6 bg-[#0d6efd] btn text-lg font-bold text-white">Sign Up</a>
-                </div>
+      <div class="mt-4">
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
               </div>
+            </div>
+            <a
+              class="text-2xl font-bold text-[#403f3f] border-2 border-gray-400 border-dotted"
+              >Hot Gadgets</a
+            >
+          </div>
+          <div class="navbar-center hidden lg:flex"></div>
+          <div class="navbar-end">
+            <a class="px-6 bg-[#0d6efd] btn text-lg font-bold text-white"
+              >Sign Up</a
+            >
+          </div>
         </div>
-       <section>
-            <div class="mt-12">
-                <div class="flex flex-col justify-center items-center space-y-8">
-                    <h1 class="text-6xl font-bold text-[#100f0f]">Apple Iphone 13 Pro Max</h1>
-                    <p class="text-lg text-center text-[#706f6f] w-[735px]">You can also display battery level as a percentage, turn Low Power Mode on or off, and check your battery’s health.</p>
-                    <a class="px-6 bg-[#0d6efd] btn text-lg font-bold text-white">Buy Now</a>
-                </div>
-            </div>
-            <div>
-                <div class="text-center justify-center items-center flex mt-6">
-                    <img src="images/three-phone.png" alt="">
-                </div>
-            </div>
+      </div>
+      <section>
+        <div class="mt-12">
+          <div class="flex flex-col justify-center items-center space-y-8">
+            <h1 class="text-6xl font-bold text-[#100f0f]">
+              Apple Iphone 13 Pro Max
+            </h1>
+            <p class="text-lg text-center text-[#706f6f] w-[735px]">
+              You can also display battery level as a percentage, turn Low Power
+              Mode on or off, and check your battery’s health.
+            </p>
+            <a class="px-6 bg-[#0d6efd] btn text-lg font-bold text-white"
+              >Buy Now</a
+            >
+          </div>
+        </div>
+        <div>
+          <div class="text-center justify-center items-center flex mt-6">
+            <img src="images/three-phone.png" alt="" />
+          </div>
+        </div>
 
-            <div class="mt-10">
-                <div class="flex flex-col text-center justify-center items-center">
-                        <h2 class="text-3xl font-semibold text-[#100f0f]">Search your phone</h2>
-                        <div class="flex items-center relative space-y-8">
-                            <div class="absolute top-[50px] left-[16px]">
-                                <img class="h-6" src="images/glass.png" alt="">
-                            </div>
-                            <input id="searchField" type="text" placeholder="Search your phone" class="input bg-[#f3f3f3] w-[600px] h-[60px] px-12 text-base text-[#706f6f]" />
-                            <div>
-                                <button onclick="searchField()" class="bg-[#0d6efd] px-6 py-4 rounded-md text-lg font-bold text-white">Search</button>
-                            </div>
-                        </div>
-                </div>
+        <div class="mt-10">
+          <div class="flex flex-col text-center justify-center items-center">
+            <h2 class="text-3xl font-semibold text-[#100f0f]">
+              Search your phone
+            </h2>
+            <div class="flex items-center relative space-y-8">
+              <div class="absolute top-[50px] left-[16px]">
+                <img class="h-6" src="images/glass.png" alt="" />
+              </div>
+              <input
+                id="searchField"
+                type="text"
+                placeholder="Search your phone"
+                class="input bg-[#f3f3f3] w-[600px] h-[60px] px-12 text-base text-[#706f6f]"
+              />
+              <div>
+                <button
+                  onclick="searchField()"
+                  class="bg-[#0d6efd] px-6 py-4 rounded-md text-lg font-bold text-white"
+                >
+                  Search
+                </button>
+              </div>
             </div>
-       </section>
-
+          </div>
+        </div>
+      </section>
     </header>
 
     <main>
-        <section>
-            <div id="toggleSpinner" class="text-center mt-12 hidden">
-                <span class="loading loading-spinner text-[#0d6efd] loading-lg"></span>
+      <section>
+        <div id="toggleSpinner" class="text-center mt-12 hidden">
+          <span
+            class="loading loading-spinner text-[#0d6efd] loading-lg"
+          ></span>
+        </div>
+        <div
+          id="card-container"
+          class="grid grid-cols-1 lg:grid-cols-4 gap-6 mt-12"
+        ></div>
+        <div id="showAll" class="text-center my-8 hidden">
+          <button
+            onclick="showAllBtn()"
+            class="px-6 bg-[#0d6efd] btn text-lg font-bold text-white"
+          >
+            Show All
+          </button>
+        </div>
+      </section>
+
+      <!-- Open the modal using ID.showModal() method -->
+      <dialog id="show_details_modal" class="modal modal-bottom sm:modal-middle">
+        <div class="modal-box">
+            <div id="showPhoneDetail">
+               
             </div>
-            <div id="card-container" class="grid grid-cols-1 lg:grid-cols-4 gap-6 mt-12">
-                
-            </div>
-            <div id="showAll" class="text-center my-8 hidden">
-                <button onclick="showAllBtn()" class="px-6 bg-[#0d6efd] btn text-lg font-bold text-white">Show All</button>
-            </div>
-        </section>
+          <div class="modal-action">
+            <form method="dialog">
+              <!-- if there is a button in form, it will close the modal -->
+              <button class="text-lg font-bold px-8 py-3 rounded-md text-white bg-[#e84031]">Close</button>
+            </form>
+          </div>
+        </div>
+      </dialog>
     </main>
-    
-    <footer>
 
-    </footer>
+    <footer></footer>
 
-<script src="js/phone.js"></script>
-</body>
+    <script src="js/phone.js"></script>
+  </body>
 </html>
