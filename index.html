@@ -57,9 +57,9 @@
                             <div class="absolute top-[50px] left-[16px]">
                                 <img class="h-6" src="images/glass.png" alt="">
                             </div>
-                            <input type="text" placeholder="Search your phone" class="input bg-[#f3f3f3] w-[600px] h-[60px] px-12 text-base text-[#706f6f]" />
+                            <input id="searchField" type="text" placeholder="Search your phone" class="input bg-[#f3f3f3] w-[600px] h-[60px] px-12 text-base text-[#706f6f]" />
                             <div>
-                                <button class="bg-[#0d6efd] px-6 py-4 rounded-md text-lg font-bold text-white">Search</button>
+                                <button onclick="searchField()" class="bg-[#0d6efd] px-6 py-4 rounded-md text-lg font-bold text-white">Search</button>
                             </div>
                         </div>
                 </div>
@@ -72,6 +72,9 @@
         <section class="">
             <div id="card-container" class="grid grid-cols-1 lg:grid-cols-4 gap-6 mt-12">
                 
+            </div>
+            <div>
+                <a class="px-6 bg-[#0d6efd] btn text-lg font-bold text-white">Show All</a>
             </div>
         </section>
     </main>
