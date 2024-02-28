@@ -69,12 +69,15 @@
     </header>
 
     <main>
-        <section class="">
+        <section>
+            <div id="toggleSpinner" class="text-center mt-12 hidden">
+                <span class="loading loading-spinner text-[#0d6efd] loading-lg"></span>
+            </div>
             <div id="card-container" class="grid grid-cols-1 lg:grid-cols-4 gap-6 mt-12">
                 
             </div>
-            <div>
-                <a class="px-6 bg-[#0d6efd] btn text-lg font-bold text-white">Show All</a>
+            <div id="showAll" class="text-center my-8 hidden">
+                <button onclick="showAllBtn()" class="px-6 bg-[#0d6efd] btn text-lg font-bold text-white">Show All</button>
             </div>
         </section>
     </main>

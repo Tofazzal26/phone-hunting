@@ -1,19 +1,29 @@
 
 
-const loadData = async (searchText) => {
+const loadData = async (searchText, isShowAll) => {
     const res = await fetch(`https://openapi.programming-hero.com/api/phones?search=${searchText}`);
     const data = await res.json();
     const phone = data.data
-    phoneData(phone);
+    phoneData(phone, isShowAll);
 }
 
 
 
 
-const phoneData = (phones) => {
+const phoneData = (phones, isShowAll) => {
     const cardDiv = document.getElementById('card-container');
     cardDiv.innerText = '';
 
+    const showAll = document.getElementById('showAll');
+
+    if (phones.length > 12 && !isShowAll) {
+        showAll.classList.remove('hidden');
+    } else {
+        showAll.classList.add('hidden');
+    }
+    if(!isShowAll) {
+        phones = phones.slice(0, 12);
+    }
     
 
 
@@ -37,16 +47,28 @@ const phoneData = (phones) => {
         `;
         cardDiv.appendChild(div);
     })
+    toggleSpinner(false);
 }
 
 
 
-const searchField = () => {
+const searchField = (isShowAll) => {
+    toggleSpinner(true);
     const searchField = document.getElementById('searchField');
     const searchValue = searchField.value;
-    loadData(searchValue);
+    loadData(searchValue, isShowAll);
 }
 
+const toggleSpinner = (spinner) => {
+    const toggleSpinners = document.getElementById('toggleSpinner');
+    if(spinner) {
+        toggleSpinners.classList.remove('hidden');
+    } else {
+        toggleSpinners.classList.add('hidden');
+    }
+}
 
-
-
+const showAllBtn = () => {
+    searchField(true);
+    
+}
