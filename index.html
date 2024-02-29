@@ -23,8 +23,8 @@
       }
     </style>
   </head>
-  <body class="poppins container mx-auto">
-    <header>
+  <body class="poppins">
+    <header class=" container mx-auto">
       <div class="mt-4">
         <div class="navbar bg-base-100">
           <div class="navbar-start">
@@ -70,7 +70,7 @@
               Mode on or off, and check your battery’s health.
             </p>
             <a class="px-6 bg-[#0d6efd] btn text-lg font-bold text-white"
-              >Buy Now</a
+              >Buy Now</a>
             >
           </div>
         </div>
@@ -109,7 +109,7 @@
       </section>
     </header>
 
-    <main>
+    <main class="container mx-auto">
       <section>
         <div id="toggleSpinner" class="text-center mt-12 hidden">
           <span
@@ -146,7 +146,72 @@
       </dialog>
     </main>
 
-    <footer></footer>
+    <footer class="bg-[#f3f8ff] py-28">
+        <div class="container mx-auto">
+            <div class="flex justify-between border-b-2 border-gray-200 pb-14">
+                <div>
+                    <h2 class="font-bold text-4xl text-black">Hot Gadgets</h2>
+                    <p class="font-semibold text-lg mt-3 text-[#717070]">You can definitely work.</p>
+                </div>
+                <div>
+                    <div class="flex items-center gap-8">
+                      <div class="flex gap-6">
+                        <img class="h-6 border-2 border-dotted border-gray-300" src="images/facebook.png" alt="">
+                        <img class="h-6 border-2 border-dotted border-gray-300" src="images/twitter.png" alt="">
+                        <img class="h-6 border-2 border-dotted border-gray-300" src="images/instagram.png" alt="">
+                      </div>
+                      <div>
+                        <button class="px-6 py-4 rounded-md bg-[#0d6efd] text-lg font-bold text-white"
+                        >Join Premium</button>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- list item section start -->
+        <div class="container mx-auto">
+            <div class="flex justify-between mt-14">
+                <div>
+                    <ul class="text-lg font-medium text-[#464545] space-y-2">
+                      <li>Product</li>
+                      <li>Browse jobs</li>
+                      <li>Remote Jobs</li>
+                      <li>Startup jobs</li>
+                      <li>Company jobs</li>
+                    </ul>
+                </div>
+                <div>
+                  <ul class="text-lg font-medium text-[#464545] space-y-2">
+                    <li>Popular</li>
+                    <li>UIUX Design</li>
+                    <li>Product Design</li>
+                    <li>Back-End Developer</li>
+                    <li>Front-End Developer</li>
+                  </ul>
+              </div>
+              <div>
+                <ul class="text-lg font-medium text-[#464545] space-y-2">
+                  <li>Resource</li>
+                  <li>Faq</li>
+                  <li>Support</li>
+                  <li>Privacy Policy</li>
+                  <li>Terms of Service</li>
+                </ul>
+            </div>
+            <div>
+              <ul class="text-lg font-medium text-[#464545] space-y-2">
+                <li>Company</li>
+                <li>About us</li>
+                <li>Contact Us</li>
+                <li>Career Tips</li>
+                <li>Careers</li>
+              </ul>
+          </div>
+            </div>
+        </div>
+
+
+    </footer>
 
     <script src="js/phone.js"></script>
   </body>
